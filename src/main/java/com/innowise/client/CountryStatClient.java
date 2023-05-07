@@ -1,6 +1,6 @@
 package com.innowise.client;
 
-import com.innowise.model.CovidDataByDate;
+import com.innowise.dto.CovidDataByDate;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import org.apache.http.HttpResponse;
@@ -21,7 +21,7 @@ public class CountryStatClient {
     String baseUrl;
 
     public List<CovidDataByDate> getCasesByDatePeriod(String country, LocalDate startDate, LocalDate endDate) {
-        String url = baseUrl + "/" + country + "/status/confirmed/live?from=" + startDate + "&to=" + endDate; // Замените на ваш URL
+        String url = baseUrl + "/" + country + "/status/confirmed/live?from=" + startDate + "&to=" + endDate;
         System.out.println(url);
         HttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet(url);

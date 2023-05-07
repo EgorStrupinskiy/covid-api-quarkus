@@ -1,10 +1,10 @@
 package com.innowise.service;
 
 import com.innowise.client.CountryStatClient;
-import com.innowise.model.ApiRequest;
-import com.innowise.model.CountryStatistics;
-import com.innowise.model.CovidDataByDate;
-import com.innowise.model.MinMaxCases;
+import com.innowise.dto.ApiRequest;
+import com.innowise.dto.CountryStatistics;
+import com.innowise.dto.CovidDataByDate;
+import com.innowise.dto.MinMaxCases;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 
