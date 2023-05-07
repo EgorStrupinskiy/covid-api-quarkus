@@ -40,6 +40,11 @@
       <artifactId>quarkus-reactive-routes</artifactId>
       <version>3.0.2.Final</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.14</version>
+    </dependency>
 
     <dependency>
       <groupId>io.quarkus</groupId>
