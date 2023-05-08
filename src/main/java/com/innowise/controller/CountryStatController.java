@@ -7,6 +7,7 @@ import io.quarkus.vertx.web.Body;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.core.MediaType;
 
@@ -18,7 +19,7 @@ public class CountryStatController {
     @Inject
     CountryStatService service;
 
-    @GET
+    @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public List<CountryStatistics> list(@Body ApiRequest request) {
         return service.getMaxAndMinCasesByCountryAndDateRange(request);
